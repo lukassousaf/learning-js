@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Lidando com os elementos</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" id="nome" ">
+
+    </div>
+    <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://github.com/lukassousaf');
+
+        var textElement = document.createTextNode('MEU GITHUB');
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+        containerElement.append(linkElement);
+
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild(inputElement);
+    </script>
+</body>
+
+</html>

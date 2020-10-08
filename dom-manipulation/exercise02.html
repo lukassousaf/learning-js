@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Trabalhando com a DOM</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome">
+        <button class="botao">Adiconar</button>
+    </div>
+
+    <script>
+        // document.getElementById()
+        // var inputElement = document.getElementById('nome')
+
+
+        // document.getElementByTagName();
+        // var inputElement = document.getElementByTagName('input')[0];
+
+
+        // getElementByClassName();
+
+
+        // document.querySelector('input')
+        // var inputElement = document.querySelector('input[name=nome');
+
+        // onclick pelo JS
+        var inputElement = document.querySelector('input');
+        var btnElement = document.querySelector('button.botao');
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+
+            alert(text);
+        }
+
+        //console.log(inputElement);
+    </script>
+</body>
+
+</html>
