@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>5º exercício</title>
+</head>
+
+<body>
+    <script>
+        // 5º exercício:
+        var usuarios = [{
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+        }, {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }];
+
+        function exibeAlgo(usuarios) {
+            for (let usuario of usuarios) {
+                console.log('O ' + usuario.nome + ' possui as habilidades: ' + usuario.habilidades.join(", "));
+            }
+        }
+        exibeAlgo(usuarios)
+    </script>
+</body>
+
+</html>

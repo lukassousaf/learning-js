@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>1º exercício</title>
+</head>
+
+<body>
+    <div id="app">
+        <button id="btn" onclick="mostraAlerta()"> Criar caixa</button>
+    </div>
+    <script>
+        // 3º exercício:
+
+        var btnElement = document.querySelector('button#btn');
+
+        function mostraAlerta() {
+            // criando a div
+            var boxElement = document.createElement("div");
+
+            // estilizando
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.margin = 10;
+            boxElement.style.backgroundColor = 'red';
+
+            // adicionando a div
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(boxElement);
+        }
+    </script>
+</body>
+
+</html>
