@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>3º exercício</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <ul ">
+
+        </ul>
+    </div>
+    <script>
+        var names = ["Diego ", "Gabriel ", "Lucas ", "Lukas "];
+        // criando o elemento ul
+        var ul = document.querySelector("ul ");
+        // selecionando o nome
+        var nome = document.getElementById("nome ")
+
+        for (name of names) {
+            // chamando a funçao de inserir os nomes
+            addPessoa(name);
+        }
+
+        // função de criar li
+        function addPessoa(nome) {
+            var lista = document.createElement("li ");
+            var contLi = document.createTextNode(name);
+            lista.appendChild(contLi)
+            ul.appendChild(lista)
+
+        }
+        // função de inserir os nomes
+        function adicionar() {
+            adidPessoa(inputNewName.value);
+
+            inputNewName.value = " ";
+        }
+    </script>
+</body>
+
+</html>
